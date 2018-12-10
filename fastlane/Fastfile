@@ -1,3 +1,8 @@
 lane :test do
-  create_github_issue
+  create_github_issue(
+    api_token: "YOUR_TOKEN",
+    repo: "OWNER/NAME",
+    title: "TEST ISSUE",
+    body: "TEST BODY"
+  )
 end
